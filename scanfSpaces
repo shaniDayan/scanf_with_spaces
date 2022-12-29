@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdbool.h>
+int main(){
+    // scanf stop at spaces so if we enter two words to string 
+    char name1[30];
+   
+    // worng for two world
+    
+    printf("Enter name: "); // shani  dayan
+	scanf("%s",name1);
+	printf("Name is: %s\n",name1); // printf only - shani
+    
+    // the corect way- 
+    char name2[30];
+	printf("Enter name: "); // shani dayan
+	scanf("%[^\n]",name2);
+	printf("Name is: %s\n",name2); // shani dayan 
+	
+    return 0;
+}
